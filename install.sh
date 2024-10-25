@@ -1,1 +1,1 @@
-sudo pacman -S gimp github-cli discord telegram-desktop ranger spotify-launcher bleachbit
+sudo pacman -S gimp github-cli discord telegram-desktop ranger spotify-launcher bleachbit os-prober
