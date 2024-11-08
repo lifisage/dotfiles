@@ -19,6 +19,7 @@ Hyprland_Deps=(
     "dolphin"
     "xdg-desktop-portal-hyprland"
     "xdg-desktop-portal-gtk"
+    "archlinux-xdg-menu"
     "libnotify"
     "dunst"
     "cliphist"
@@ -33,11 +34,12 @@ Qt_Wayland=(
     "qt5ct"
     "qt6-wayland"
     "qt6-base"
-    "qt6-ct"
+    "qt6ct"
     )
 
 # Color-related packages
 Theme=(
+    "nwg-look"
     "python-pywal"
     "breeze"
     "bibata-cursor-theme"

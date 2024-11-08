@@ -8,13 +8,23 @@ else
     rm -rf yay
 fi
 
-sudo pacman -S --needed --noconfirm figlet
+sudo pacman -S --needed --noconfirm figlet gum
 
 cd packages
 chmod a+x *
 
 ./system.sh
 ./desktop.sh
-./user.sh
 ./fonts.sh
 
+if gum confirm "Do you want to install user apps";then
+    ./user.sh
+fi
+
+cd ..
+
+./services.sh
+
+#inits
+
+./pywal.sh
