@@ -7,7 +7,6 @@ linemode = "size"
 
 open = [
   { run = 'xdg-open "$@"', desc = "Open"},
-  { run = 'eog $@'},
 ]
 
 edit = [
