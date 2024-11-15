@@ -65,6 +65,7 @@ Bars=(
 Rofi=(
     "rofi-wayland"
     "rofimoji"
+    "wtype"
     )
 
 #Screenshot-related packages

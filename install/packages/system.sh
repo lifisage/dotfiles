@@ -35,6 +35,7 @@ System=(
     "brightnessctl"
     "sddm"
     "fuse2"
+    "mesa-utils"
 )
 
 Install=(
