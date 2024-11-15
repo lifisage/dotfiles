@@ -1,0 +1,5 @@
+[manager]
+prepend_keymap = [
+  {on = "!", run = "shell '~/.config/yazi/kitty.sh $0' --confirm"},
+  {on = "<C-o>", run = "shell '~/.config/yazi/default_app_chooser.sh $0' --confirm"},
+]

@@ -1,0 +1,3 @@
+#exports
+export PATH="/home/lifisage/.fvm_flutter/bin:$PATH"
+export PATH=$PATH:/home/lifisage/.spicetify
