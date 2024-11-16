@@ -36,6 +36,7 @@ System=(
     "sddm"
     "fuse2"
     "mesa-utils"
+    "pacman-contrib"
 )
 
 Install=(
