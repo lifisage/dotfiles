@@ -67,13 +67,15 @@ Web=(
 )
 
 Tools=(
+    "vimiv"
     "localsend-bin"
     "rustdesk-bin"
     "qalculate-qt"
     "baobab"
+    "gdu"
+    "udiskie"
     "bleachbit"
     "copyq"
-    "loupe"
     "ark"
     "resources"
     "tesseract"
