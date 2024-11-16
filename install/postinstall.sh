@@ -10,6 +10,9 @@
 #easyeffect presets
 ./scripts/easyeffects.sh
 
+#hide lsp-plugins from rofi
+./scripts/lsp-plugins.sh
+
 #grub theme
 ./scripts/grub.sh
 
