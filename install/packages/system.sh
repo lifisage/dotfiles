@@ -37,6 +37,7 @@ System=(
     "fuse2"
     "mesa-utils"
     "pacman-contrib"
+    "perl-file-mimeinfo"
 )
 
 Install=(

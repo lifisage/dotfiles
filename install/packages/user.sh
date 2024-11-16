@@ -11,28 +11,35 @@ Terminal=(
     "zsh-antidote"
 )
 
-Terminal_tools=(
-    "fastfetch"
-    "rsync"
-    "pacseek"
-    "btop"
-    "yazi"
+Terminal_addons=(
     "ffmpegthumbnailer"
-    "btop"
     "fzf"
     "eza"
     "ripgrep"
-    "neovim"
-    "github-cli"
     "zoxide"
-    "lazygit"
+    "fd"
+    "ueberzugpp"
+)
+
+Terminal_tools=(
+    "fastfetch"
+    "btop"
+    "yazi"
+    "neovim"
+    "handlr-regex"
+)
+
+File_tools=(
+    "rsync"
+    "rclone"
     "p7zip"
     "zip"
     "unzip"
-    "fd"
-    "ueberzugpp"
-    "perl-file-mimeinfo"
-    "handlr-regex"
+)
+
+Git=(
+    "github-cli"
+    "lazygit"
 )
 
 ImageEditing=(
@@ -59,11 +66,14 @@ Tools=(
     "bleachbit"
     "copyq"
     "eog"
+    "ark"
+    "resources"
     "tesseract"
     "tesseract-data-eng"
     "tesseract-data-rus"
     "zathura"
     "zathura-pdf-mupdf"
+    "xournalpp"
 )
 
 Development=(
@@ -81,7 +91,10 @@ Languages=(
 
 Install=(
     "${Terminal[@]}"
+    "${Terminal_addons[@]}"
     "${Terminal_tools[@]}"
+    "${File_tools[@]}"
+    "${Git[@]}"
     "${Web[@]}"
     "${Tools[@]}"
     "${Languages[@]}"
