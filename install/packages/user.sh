@@ -4,6 +4,14 @@ echo -e "${GREEN}"
 figlet -f smslant "User"
 echo -e "${NONE}"
 
+Languages=(
+    "python-pipx"
+    "rust"
+    "cargo"
+    "nodejs"
+    "luarocks"
+)
+
 Terminal=(
     "kitty"
     "zsh"
@@ -65,7 +73,7 @@ Tools=(
     "baobab"
     "bleachbit"
     "copyq"
-    "eog"
+    "loupe"
     "ark"
     "resources"
     "tesseract"
@@ -81,13 +89,6 @@ Development=(
     "visual-studio-code-bin"
 )
 
-Languages=(
-    "python-pipx"
-    "rust"
-    "cargo"
-    "nodejs"
-    "luarocks"
-)
 
 Install=(
     "${Terminal[@]}"
