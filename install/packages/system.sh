@@ -36,6 +36,7 @@ System=(
     "sddm"
     "fuse2"
     "mesa-utils"
+    "alsa-utils"
     "pacman-contrib"
     "perl-file-mimeinfo"
 )

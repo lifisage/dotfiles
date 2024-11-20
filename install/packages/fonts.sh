@@ -11,6 +11,7 @@ Fonts=(
     "noto-fonts-emoji"
     "noto-fonts-extra"
     "otf-font-awesome"
+    "ttf-font-awesome"
     "ttf-fira-sans"
     "ttf-fira-code"
     "ttf-firacode-nerd"

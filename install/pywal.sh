@@ -1,6 +1,3 @@
-# ------------------------------------------------------
-# init pywal with default wallpaper
-# ------------------------------------------------------
 echo -e "${GREEN}"
 figlet -f smslant "Pywal"
 echo -e "${NONE}"

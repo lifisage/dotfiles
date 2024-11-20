@@ -74,17 +74,12 @@ Tools=(
     "rustdesk-bin"
     "qalculate-qt"
     "baobab"
-    "gdu"
     "udiskie"
     "bleachbit"
     "copyq"
     "ark"
     "resources"
-    "tesseract"
-    "tesseract-data-eng"
-    "tesseract-data-rus"
-    "zathura"
-    "zathura-pdf-mupdf"
+    "okular"
     "xournalpp"
 )
 
@@ -106,12 +101,15 @@ Install=(
     "${Languages[@]}"
 )
 
+
 yay -S --needed --noconfirm "${Install[@]}";
+
 
 if gum confirm "Do you want to install dev apps";then
     yay -S --needed --noconfirm "${Development[@]}"
 fi
 
-if gum confirm "Do you want to install imageiditing apps";then
+if gum confirm "Do you want to install imageiditing apps";
+then
     yay -S --needed --noconfirm "${ImageEditing[@]}"
 fi
