@@ -10,6 +10,7 @@ Languages=(
     "cargo"
     "nodejs"
     "luarocks"
+    "jdk-openjdk"
 )
 
 Terminal=(
@@ -68,6 +69,7 @@ Web=(
 
 Tools=(
     "vimiv"
+    "gucharmap"
     "localsend-bin"
     "rustdesk-bin"
     "qalculate-qt"
@@ -89,6 +91,7 @@ Tools=(
 Development=(
     "android-studio"
     "visual-studio-code-bin"
+    "android-tools"
 )
 
 

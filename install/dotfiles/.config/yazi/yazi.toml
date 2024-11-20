@@ -6,7 +6,7 @@ linemode = "size"
 [opener]
 
 open = [
-  { run = 'xdg-open "$@"', desc = "Open"},
+  { run = 'xdg-open "$@"', orphan = true, desc = "Open"},
 ]
 
 edit = [

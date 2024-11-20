@@ -1,5 +1,4 @@
 {
-    // General Settings
     "layer": "top",
     "margin-top": 14,
     "margin-bottom": 0,
@@ -8,31 +7,26 @@
     "margin-right": 14,
     "spacing": 0,
 
-    // Load Modules
     "include": [
         "~/.config/waybar/modules.json"
     ],
 
-    // Modules Left
     "modules-left": [
-        "keyboard-state",
-        "wlr/taskbar",
+        "hyprland/workspaces",
         "hyprland/window"
     ],
 
-    // Modules Center
     "modules-center": [
-        "hyprland/workspaces"
+        "wlr/taskbar",
+        "custom/archicon",
     ],
 
-    // Modules Right    
     "modules-right": [
         "pulseaudio",
         "backlight",
         "bluetooth",
         "battery", 
         "network",
-        "group/hardware",
         "tray",
         "hyprland/language",
         "custom/exit",

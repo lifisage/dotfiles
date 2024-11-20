@@ -8,7 +8,7 @@
     "all-outputs": true,
     "format": "{}",
     "format-icons": {
-      "urgent": "",
+      "empty": "",
       "active": "",
       "default": ""
     },
@@ -97,7 +97,8 @@
   // Network
   "network": {
     "format": "{ifname}",
-    "format-wifi": "   {signalStrength}%",
+    "format-wifi": "{icon}",
+    "format-icons": ["󱚵 ", "󱚶 ", "󱚻 ", "󱚺 ", "󱚽 "],
     "format-ethernet": "  {ifname}",
     "format-disconnected": "Disconnected",
     "tooltip-format": " {ifname} via {gwaddri}",
@@ -146,9 +147,9 @@
 
   // Bluetooth
   "bluetooth": {
-    "format": " {status}",
-    "format-disabled": "",
-    "format-off": "",
+    "format": "",
+    "format-disabled": "",
+    "format-off": "",
     "interval": 30,
     "on-click": "blueman-manager",
     "format-no-controller": ""
@@ -174,8 +175,9 @@
       "",
       ""
     ],
-    "scroll-step": 1,
+    "scroll-step": 5,
     "on-click": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh",
     "on-click-right": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh rofi"
   }
-}
+},
+
