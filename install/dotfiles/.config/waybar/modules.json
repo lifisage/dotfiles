@@ -1,15 +1,18 @@
 {
-  // Workspaces
+  "custom/arch": {
+    "format": ""
+  },
+
   "hyprland/workspaces": {
     "on-scroll-up": "hyprctl dispatch workspace r-1",
     "on-scroll-down": "hyprctl dispatch workspace r+1",
     "on-click": "activate",
     "active-only": false,
     "all-outputs": true,
-    "format": "{}",
+    "format": "{icon}",
     "format-icons": {
       "empty": "",
-      "active": "",
+      "active": "",
       "default": ""
     },
     "persistent-workspaces": {
@@ -17,58 +20,35 @@
     }
   },
 
-  // Taskbar
   "wlr/taskbar": {
     "format": "{icon}",
-    "icon-size": 18,
+    "icon-size": 24,
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-right": "close"
   },
 
-  // Keyboard State
-  "keyboard-state": {
-    "numlock": true,
-    "capslock": true,
-    "format": "{name} {icon}",
-    "format-icons": {
-      "locked": "",
-      "unlocked": ""
-    }
-  },
-
-  // System tray
   "tray": {
     "icon-size": 21,
     "spacing": 10
   },
 
-  // Clock
   "clock": {
     "format": "{:%I:%M %p - %a}",
     "on-click": "ags -t calendar",
     "tooltip": false
   },
 
-  // System
-  "custom/system": {
-    "format": "",
-    "tooltip": true
-  },
-
-  // CPU
   "cpu": {
     "format": "/ C {usage}% ",
     "on-click": "kitty btop"
   },
 
-  // Memory
   "memory": {
     "format": "/ M {}% ",
     "on-click": "kitty btop"
   },
 
-  // Harddisc space used
   "disk": {
     "interval": 30,
     "format": "D {percentage_used}% ",
@@ -76,25 +56,12 @@
     "on-click": "kitty btop"
   },
 
-  // language
   "hyprland/language": {
     "format-en": "🇬🇧",
     "format-ru": "🇷🇺",
     "format-hy": "🇦🇲"
   },
 
-  // Group Hardware
-  "group/hardware": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "children-class": "not-memory",
-      "transition-left-to-right": false
-    },
-    "modules": ["custom/system", "disk", "cpu", "memory"]
-  },
-
-  // Network
   "network": {
     "format": "{ifname}",
     "format-wifi": "{icon}",
@@ -109,10 +76,8 @@
     "on-click": "nm-connection-editor toggle"
   },
 
-  // Battery
   "battery": {
     "states": {
-      // "good": 95,
       "warning": 30,
       "critical": 15
     },
@@ -123,7 +88,6 @@
     "format-icons": [" ", " ", " ", " ", " "]
   },
 
-  // Pulseaudio
   "pulseaudio": {
     "scroll-step": 5,
     "format": "{icon}  {volume}%",
@@ -145,17 +109,6 @@
     "on-click-right": "easyeffects"
   },
 
-  // Bluetooth
-  "bluetooth": {
-    "format": "",
-    "format-disabled": "",
-    "format-off": "",
-    "interval": 30,
-    "on-click": "blueman-manager",
-    "format-no-controller": ""
-  },
-
-  // backlight:
   "backlight": {
     "format": "{icon} {percent}%",
     "format-icons": [
@@ -179,5 +132,4 @@
     "on-click": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh",
     "on-click-right": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh rofi"
   }
-},
-
+}

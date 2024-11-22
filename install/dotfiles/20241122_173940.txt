@@ -1,6 +1,5 @@
 .config
  
-ags
 dunst
 fastfetch
 gtk-3.0

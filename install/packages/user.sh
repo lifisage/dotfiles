@@ -11,6 +11,8 @@ Languages=(
     "nodejs"
     "luarocks"
     "jdk-openjdk"
+    "jdk21-openjdk"
+    "jdk17-openjdk"
 )
 
 Terminal=(
@@ -65,6 +67,7 @@ Web=(
     "obsidian"
     "qbittorrent"
     "stremio"
+    "thunderbird"
 )
 
 Tools=(

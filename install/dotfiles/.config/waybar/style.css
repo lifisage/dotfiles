@@ -1,347 +1,212 @@
-@import '../../.cache/wal/colors-waybar.css';
+@import "../../.cache/wal/colors-waybar.css";
 
 * {
-    font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    border: none;
-    border-radius: 20px;
+  font-family: "Fira Sans Semibold", "FiraCode Nerd Font",
+    "FiraCode Nerd Font Mono";
+  border: none;
+  border-radius: 20px;
+}
+
+#custom-arch {
+  font-size: 25px;
+  color: @color1;
+  margin: 0px 20px 0px 20px;
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,0.8);
-    /* color: #FFFFFF; */
-    background:  rgb(0,0,0);
-    transition-property: background-color;
-    transition-duration: 10s;
+  background: @background;
+  transition-property: background-color;
+  transition-duration: 10s;
 }
 
-
 #workspaces {
-    background: @workspacesbackground1;
-    margin: 3px 0px 3px 0px;
-      padding: 0px 5px;
-    border-radius: 15px;
-    border: 0px;
-    font-weight: bold;
-    font-style: normal;
-    opacity: 0.8;
-    font-size: 16px;
-    color: @textcolor1;
+  background: @background;
+  margin: 3px 0px 3px 0px;
+  padding: 0px 0px;
+  border-radius: 15px;
+  border: 0px;
+  opacity: 0.8;
+  font-size: 16px;
+  color: @color1;
 }
 
 #workspaces button {
-    padding: 0px 5px;
-    margin: 4px 3px;
-    border-radius: 15px;
-    border: 0px;
-    color: @textcolor1;
-    background-color: @workspacesbackground2;
-    transition: all 0.3s ease-in-out;
-    opacity: 0.4;
+  padding: 0px 5px;
+  margin: 4px 3px;
+  border-radius: 15px;
+  border: 0px;
+  color: @color1;
+  background-color: @foreground;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.4;
 }
 
 #workspaces button.active {
-    color: @textcolor1;
-    background: @workspacesbackground2;
-    border-radius: 15px;
-    min-width: 40px;
-    transition: all 0.3s ease-in-out;
-    opacity:1.0;
+  color: @color1;
+  background: @foreground;
+  border-radius: 15px;
+  min-width: 40px;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
 }
 
 #workspaces button:hover {
-    color: @textcolor1;
-    background: @workspacesbackground2;
-    border-radius: 15px;
-    opacity:0.7;
+  color: @color1;
+  background: @foreground;
+  border-radius: 15px;
+  opacity: 0.7;
 }
 
+#workspaces button.empty {
+  background: @color2;
+}
 
 tooltip {
-    border-radius: 10px;
-    background-color: @backgroundlight;
-    opacity:0.8;
-    padding:20px;
-    margin:0px;
+  border-radius: 10px;
+  background-color: @backgroundlight;
+  opacity: 0.8;
+  padding: 20px;
+  margin: 0px;
 }
 
 tooltip label {
-    color: @textcolor2;
+  color: @foreground;
 }
-
 
 #window {
-    background: @backgroundlight;
-    margin: 5px 15px 5px 0px;
-    padding: 2px 10px 0px 10px;
-    border-radius: 12px;
-    color:@textcolor2;
-    font-size:16px;
-    font-weight:normal;
-    opacity:0.8;
+  background: @backgroundlight;
+  margin: 5px 15px 5px 0px;
+  padding: 2px 10px 0px 10px;
+  border-radius: 12px;
+  color: @foreground;
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.8;
 }
 
-
 #taskbar {
-    background: @workspacesbackground2;
-    margin: 3px 15px 3px 0px;
-    padding:0px;
-    border-radius: 15px;
-    font-weight: normal;
-    font-style: normal;
-    opacity:0.8;
-    border: 3px solid @backgroundlight;
+  background: transparent;
+  margin: 5px 0px 5px 0px;
+  padding: 0px;
+  border-radius: 15px;
+  font-weight: normal;
+  font-style: normal;
+  opacity: 0.9;
 }
 
 #taskbar button {
-    margin:0;
-    border-radius: 15px;
-    padding: 0px 5px 0px 5px;
+  border-radius: 15px;
+  padding: 2px 5px 2px 5px;
 }
 
-#taskbar.empty {
-    background:transparent;
-    border:0;
-    padding:0;
-    margin:0;
+#taskbar button.active {
+  background: @foreground;
+  border-radius: 75%;
+  transition: all 0.3s ease-out;
 }
 
-
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
-
-#custom-system,
-#custom-hyprshade,
-#custom-hypridle,
-#custom-tools,
-#custom-quicklink1,
-#custom-quicklink2,
-#custom-quicklink3,
-#custom-quicklink4,
-#custom-quicklink5,
-#custom-quicklink6,
-#custom-quicklink7,
-#custom-quicklink8,
-#custom-quicklink9,
-#custom-quicklink10,
-#custom-waybarthemes {
-    margin-right: 16px;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.8;
-    color: @iconcolor;
-}
-
-#custom-quicklink1,
-#custom-quicklink2,
-#custom-quicklink3,
-#custom-quicklink4,
-#custom-quicklink5,
-#custom-quicklink6,
-#custom-quicklink7,
-#custom-quicklink8,
-#custom-quicklink9,
-#custom-quicklink10 {
-    margin-right: 24px;   
-}
-
-#custom-tools {
-    margin-right:12px;
-}
-
-#custom-hypridle.active {
-    color: @iconcolor;
-}
-
-#custom-hypridle.notactive {
-    color: #dc2f2f;
-}
-
-
-#idle_inhibitor {
-    margin-right: 15px;
-    font-size: 22px;
-    font-weight: bold;
-    opacity: 0.8;
-    color: @iconcolor;
-}
-
-#idle_inhibitor.activated {
-    margin-right: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.8;
-    color: #dc2f2f;
-}
-
-
-#custom-appmenu {
-    background-color: @backgrounddark;
-    font-size: 16px;
-    color: @textcolor1;
-    border-radius: 15px;
-    padding: 0px 10px 0px 10px;
-    margin: 3px 17px 3px 0px;
-    opacity:0.8;
-    border:3px solid @bordercolor;
-}
-
-
-#custom-exit {
-    margin: 0px 13px 0px 0px;
-    padding:0px;
-    font-size:20px;
-    color: @iconcolor;
-    opacity: 0.8;
-}
-
-
-#disk,#memory,#cpu,#language {
-    margin:0px;
-    padding:0px;
-    font-size:16px;
-    color:@iconcolor;
+#disk,
+#memory,
+#cpu,
+#language {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  color: @iconcolor;
 }
 
 #language {
-    margin-right:10px;
+  margin-right: 10px;
 }
-
 
 #clock {
-    background-color: @backgrounddark;
-    font-size: 16px;
-    color: @textcolor1;
-    border-radius: 15px;
-    padding: 1px 10px 0px 10px;
-    margin: 3px 0px 3px 0px;
-    opacity:0.8;
-    border:3px solid @bordercolor;   
+  background-color: @background;
+  font-size: 16px;
+  color: @color1;
+  border-radius: 15px;
+  padding: 1px 10px 0px 10px;
+  margin: 3px 0px 3px 0px;
+  opacity: 0.8;
 }
-
 
 #backlight {
-    background-color: @backgroundlight;
-    font-size: 16px;
-    color: @textcolor2;
-    border-radius: 15px;
-    padding: 2px 1px 0px 1px;
-    margin: 5px 15px 5px 0px;
-    opacity:0.8;
+  background-color: @backgroundlight;
+  font-size: 16px;
+  color: @foreground;
+  border-radius: 15px;
+  padding: 2px 1px 0px 1px;
+  margin: 5px 15px 5px 0px;
+  opacity: 0.8;
 }
 
-
 #pulseaudio {
-    background-color: @backgroundlight;
-    font-size: 16px;
-    color: @textcolor2;
-    border-radius: 15px;
-    padding: 2px 1px 0px 1px;
-    margin: 5px 15px 5px 0px;
-    opacity:0.8;
+  background-color: @backgroundlight;
+  font-size: 16px;
+  color: @foreground;
+  border-radius: 15px;
+  padding: 2px 1px 0px 1px;
+  margin: 5px 15px 5px 0px;
+  opacity: 0.8;
 }
 
 #pulseaudio.muted {
-    background-color: @backgrounddark;
-    color: @textcolor1;
+  background-color: @backgrounddark;
+  color: @color1;
 }
 
-
 #network {
-    background-color: @backgroundlight;
-    font-size: 20px;
-    color: @textcolor2;
-    border-radius: 15px;
-    padding: 2px 1px 0px 1px;
-    margin: 5px 5px 5px 0px;
-    opacity:0.8;
+  background-color: @backgroundlight;
+  font-size: 20px;
+  color: @foreground;
+  border-radius: 15px;
+  padding: 2px 1px 0px 1px;
+  margin: 5px 5px 5px 0px;
+  opacity: 0.8;
 }
 
 #network.ethernet {
-    background-color: @backgroundlight;
-    color: @textcolor2;
+  background-color: @backgroundlight;
+  color: @foreground;
 }
 
 #network.wifi {
-    background-color: @backgroundlight;
-    color: @textcolor2;
+  background-color: @backgroundlight;
+  color: @foreground;
 }
-
-
-#bluetooth, #bluetooth.on, #bluetooth.connected, #bluetooth.off {
-    background-color: @backgroundlight;
-    font-size: 20px;
-    border-radius: 15px;
-    padding: 0px 1px 0px 1px;
-    margin: 5px 0px 5px 0px;
-    opacity:0.8;
-}
-
-#bluetooth {
-  color: white;
-}
-
-#bluetooth.connected {
-  color: yellow;
-}
-
-#bluetooth.off {
-  color: red;
-}
-
-#bluetooth.on {
-  color: green;
-}
-
 
 #battery {
-    background-color: @backgroundlight;
-    font-size: 16px;
-    color: @textcolor2;
-    border-radius: 15px;
-    padding: 2px 15px 0px 10px;
-    margin: 5px 15px 5px 0px;
-    opacity:0.8;
+  background-color: @backgroundlight;
+  font-size: 16px;
+  color: @foreground;
+  border-radius: 15px;
+  padding: 2px 15px 0px 10px;
+  margin: 5px 15px 5px 0px;
+  opacity: 0.8;
 }
 
-#battery.charging, #battery.plugged {
-    color: @textcolor2;
-    background-color: @backgroundlight;
+#battery.charging,
+#battery.plugged {
+  color: @foreground;
+  background-color: @backgroundlight;
 }
 
 @keyframes blink {
-    to {
-        background-color: @backgroundlight;
-        color: @textcolor2;
-    }
+  to {
+    background-color: @backgroundlight;
+    color: @foreground;
+  }
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: @textcolor3;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background-color: #f53c3c;
+  color: @color3;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-
 
 #tray {
-    padding: 0px 10px 0px 0px;
+  padding: 0px 10px 0px 0px;
 }
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-}
-
-
