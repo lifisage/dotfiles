@@ -1,1 +1,1 @@
-kitty --title "floating_kitty" "$(dirname "$1")"
+kitty --title "floating_kitty" "$(dirname "$*")"

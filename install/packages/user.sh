@@ -71,11 +71,13 @@ Web=(
 )
 
 Tools=(
-    "vimiv"
+    "loupe"
+    "yt-dlp"
     "gucharmap"
     "localsend-bin"
     "rustdesk-bin"
     "qalculate-qt"
+    "syncthing"
     "baobab"
     "udiskie"
     "bleachbit"

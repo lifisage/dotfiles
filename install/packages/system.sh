@@ -22,7 +22,8 @@ Battery=(
     "tlp-rdw"
 )
 
-Bluetooth=(
+Bluetooth_and_Network=(
+    "iwd"
     "blueman"
     "bluez"
     "bluez-libs"
@@ -44,7 +45,7 @@ System=(
 Install=(
     "${Audio[@]}"
     "${Battery[@]}"
-    "${Bluetooth[@]}"
+    "${Bluetooth_and_Network[@]}"
     "${System[@]}"
 )
 
