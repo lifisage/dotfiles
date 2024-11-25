@@ -89,6 +89,7 @@ Tools=(
    "resources"
    "okular"
    "xournalpp"
+   "scrcpy"
 )
 
 Development=(
