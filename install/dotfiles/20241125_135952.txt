@@ -1,6 +1,5 @@
 .config
  
-ags
 dunst
 fastfetch
 gtk-3.0
@@ -22,7 +21,6 @@ yazi
 ~
  
 .p10k.zsh
-.vimiv
 .zsh_plugins.txt
 .zshrc
 .zshrc_folder
