@@ -18,7 +18,7 @@ backup_file() {
   local target="./dotfiles/$3/"
   if [ -e "$source" ]; then
     mkdir -p "$(dirname "$target")"
-    cp -R --preserve=mode,ownership,timestamps "$source" "$target"
+    rsync -av --delete "$source" "$target"
       echo "Backed up: $2"
   fi
 }
