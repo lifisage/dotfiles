@@ -13,8 +13,8 @@ Languages=(
    "npm"
    "luarocks"
    "jdk-openjdk"
-   "jdk21-openjdk"
    "jdk17-openjdk"
+   "jdk21-openjdk"
 )
 
 Terminal=(
@@ -88,7 +88,6 @@ Tools=(
    "ark"
    "resources"
    "okular"
-   "xournalpp"
    "scrcpy"
 )
 

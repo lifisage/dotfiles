@@ -9,20 +9,14 @@
     "~/.config/waybar/modules.json"
   ],
   "modules-left": [
-    "custom/arch",
-    "hyprland/workspaces",
-    "hyprland/window"
+    "group/left"
   ],
   "modules-center": [
-    "wlr/taskbar"
+    "group/taskbarr"
   ],
   "modules-right": [
-    "pulseaudio",
-    "backlight",
-    "battery",
-    "network",
     "tray",
-    "hyprland/language",
-    "clock"
+    "group/system",
+    "group/timelang"
   ]
 }
