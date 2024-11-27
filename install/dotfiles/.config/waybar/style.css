@@ -4,7 +4,7 @@
 * {
   font-family: "Fira Sans Semibold", "FiraCode Nerd Font",
     "FiraCode Nerd Font Mono";
-  border-radius: 20px;
+    border-radius: 20px;
 }
 
 window#waybar {
@@ -37,40 +37,41 @@ tooltip label {
 }
 
 #workspaces {
-    background: transparent;
-    margin: 3px 0px 3px 0px;
-    border-radius: 15px;
-    font-size: 16px;
-    color: @color1;
-  }
+  background: transparent;
+  margin: 3px 0px 3px 0px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: @color1;
+}
   
-  #workspaces button {
-    padding: 0px 5px;
-    margin: 4px 3px;
-    border-radius: 15px;
-    color: @color1;
-    background-color: @foreground;
-    transition: all 0.3s ease-in-out;
-  }
+#workspaces button {
+  padding: 0px 5px;
+  margin: 4px 3px;
+  border-radius: 15px;
+  color: @color1;
+  background-color: @foreground;
+  transition: all 0.3s ease-in-out;
+}
   
-  #workspaces button.active {
-    color: @color1;
+#workspaces button.active {
+  color: @color1;
+  background: @foreground;
+  border-radius: 15px;
+  min-width: 40px;
+  transition: all 0.3s ease-in-out;
+}
+  
+#workspaces button:hover {
+  color: @color1;
+  background-color: @foreground;
+  border-radius: 15px;
+  opacity: 0.7;
+}
+  
+#workspaces button.empty {
     background: @foreground;
-    border-radius: 15px;
-    min-width: 40px;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  #workspaces button:hover {
-    color: @color1;
-    background: @foreground;
-    border-radius: 15px;
-    opacity: 0.7;
-  }
-  
-  #workspaces button.empty {
-    background: @color2;
-  }
+    opacity: 0.3;
+}
 
 
 #window {
@@ -82,21 +83,19 @@ tooltip label {
   font-size: 16px;
 }
 
+
 #taskbar {
   background: @background;
-  margin: 5px 10px 5px 10px;
-  padding: 0px 10px 0px 10px;
-  border-radius: 15px;
 }
 
-#taskbar button {
-  border-radius: 15px;
-  padding: 2px 5px 2px 5px;
+#taskbar.empty {
+  background: transparent;
 }
 
 #taskbar button.active {
-  background: @foreground;
-  border-radius: 75%;
+  background: @color1;
+  padding: 3px 3px;
+  margin: 3px 3px;
   transition: all 0.3s ease-out;
 }
 
@@ -133,12 +132,10 @@ tooltip label {
   padding: 2px 15px 0px 15px;
 }
 
-
 #backlight.percent, #pulseaudio.volume, #battery.percent{
   font-size: 12px;
   color: @foreground;
 }
-
 
 #battery.critical:not(.charging) {
   background-color: #f53c3c;

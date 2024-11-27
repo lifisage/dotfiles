@@ -12,7 +12,7 @@
     "group/left"
   ],
   "modules-center": [
-    "group/taskbarr"
+    "wlr/taskbar"
   ],
   "modules-right": [
     "tray",

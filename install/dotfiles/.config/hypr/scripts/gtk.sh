@@ -22,11 +22,8 @@ gsettings set "$gnome_schema" cursor-theme "$cursor_theme"
 gsettings set "$gnome_schema" font-name "$font_name"
 gsettings set "$gnome_schema" color-scheme "prefer-dark"
 
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal "$terminal"
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal use-generic-terminal-name "true"
-gsettings set com.github.stunkymonkey.nautilus-open-any-terminal keybindings "<Ctrl><Alt>t"
-
-if [ -f ~/.config/hypr/conf/cursor.conf ] ;then
-    echo "exec-once = hyprctl setcursor $cursor_theme $cursor_size" > ~/.config/hypr/conf/cursor.conf
-    hyprctl setcursor $cursor_theme $cursor_size
+if [ -f ~/.config/hypr/conf/cursor.conf ]; then
+   echo "exec-once = hyprctl setcursor $cursor_theme $cursor_size" >~/.config/hypr/conf/cursor.conf
+   hyprctl setcursor $cursor_theme $cursor_size
 fi
+

@@ -1,8 +1,7 @@
 {
   "custom/arch": {
     "format": "",
-    "tooltip": false,
-    "on-click": "kitty btop"
+    "tooltip": false
   },
 
   "hyprland/workspaces": {
@@ -24,7 +23,7 @@
 
   "wlr/taskbar": {
     "format": "{icon}",
-    "icon-size": 24,
+    "icon-size": 26,
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-right": "close"
@@ -142,19 +141,9 @@
     "on-click-right": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh rofi"
   },
 
-  "group/archlinux": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "children-class": "not-memory",
-      "transition-left-to-right": true
-    },
-    "modules": ["custom/arch", "cpu", "memory", "disk"]
-  },
-
   "group/left": {
     "orientation": "horizontal",
-    "modules": ["group/archlinux", "hyprland/workspaces", "hyprland/window"]
+    "modules": ["custom/arch", "hyprland/workspaces", "hyprland/window"]
   },
 
   "group/batt": {
@@ -180,10 +169,5 @@
   "group/timelang": {
     "orientation": "horizontal",
     "modules": ["hyprland/language", "clock"]
-  },
-
-  "group/taskbarr": {
-    "orientation": "horizontal",
-    "modules": ["wlr/taskbar"]
   }
 }

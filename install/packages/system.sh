@@ -35,6 +35,7 @@ System=(
    "nm-connection-editor"
    "brightnessctl"
    "sddm"
+   "xorg-xsetroot"
    "fuse2"
    "mesa-utils"
    "alsa-utils"
