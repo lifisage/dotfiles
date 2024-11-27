@@ -87,7 +87,7 @@ Tools=(
    "copyq"
    "ark"
    "resources"
-   "okular"
+   "xournalpp"
    "scrcpy"
 )
 
