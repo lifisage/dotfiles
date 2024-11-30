@@ -6,11 +6,12 @@ echo -e "${NONE}"
 
 Languages=(
    "python-pipx"
+   "python-pip"
    "rust"
    "cargo"
    "nodejs"
-   "yarn"
    "npm"
+   "npm-check-updates"
    "luarocks"
    "jdk-openjdk"
    "jdk17-openjdk"
