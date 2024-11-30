@@ -71,8 +71,21 @@
     "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-    "on-click": "nm-connection-editor toggle",
-    "on-click-right": "blueman-manager"
+    "on-click": "nm-connection-editor toggle"
+  },
+
+  "bluetooth#main": {
+    "format": "",
+    "on-click": "blueman-manager"
+  },
+
+  "bluetooth#stat": {
+    "format": "",
+    "format-on": "on",
+    "format-off": "off",
+    "format-disconnected": "dsb",
+    "format-connected": "con",
+    "on-click": "blueman-manager"
   },
 
   "battery#main": {
@@ -129,16 +142,12 @@
       "",
       ""
     ],
-    "scroll-step": 5,
-    "on-click": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh",
-    "on-click-right": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh rofi"
+    "scroll-step": 5
   },
 
   "backlight#percent": {
     "tooltip": false,
-    "scroll-step": 5,
-    "on-click": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh",
-    "on-click-right": "sleep 0.5; ~/.config/hypr/scripts/hyprshade.sh rofi"
+    "scroll-step": 5
   },
 
   "group/left": {
@@ -161,9 +170,20 @@
     "modules": ["backlight#main", "backlight#percent"]
   },
 
+  "group/bluetooth": {
+    "orientation": "vertical",
+    "modules": ["bluetooth#main", "bluetooth#stat"]
+  },
+
   "group/system": {
     "orientation": "horizontal",
-    "modules": ["group/audio", "group/blight", "group/batt", "network"]
+    "modules": [
+      "group/audio",
+      "group/blight",
+      "group/batt",
+      "group/bluetooth",
+      "network"
+    ]
   },
 
   "group/timelang": {

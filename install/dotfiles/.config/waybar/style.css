@@ -25,6 +25,10 @@ tooltip label {
   color: @foreground;
 }
 
+.modules-right {
+  background: @background;
+}
+
 #left, #system, #timelang, #taskbarr {
   background: @background;
 }
@@ -118,21 +122,21 @@ tooltip label {
   background-color: transparent;
   font-size: 20px;
   color: @foreground;
-  padding-right: 5px;
+  padding: 2px 0px 0px 10px;
 }
 
 #audio, #batt, #blight{
   min-width: 30px;  
 }
 
-#backlight.main, #pulseaudio.main, #battery.main {
+#backlight.main, #pulseaudio.main, #battery.main,#bluetooth.main {
   background-color: transparent;
   font-size: 16px;
   color: @foreground;
   padding: 2px 15px 0px 15px;
 }
 
-#backlight.percent, #pulseaudio.volume, #battery.percent{
+#backlight.percent, #pulseaudio.volume, #battery.percent, #bluetooth.stat{
   font-size: 12px;
   color: @foreground;
 }
