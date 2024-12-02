@@ -22,12 +22,6 @@
 #fix dolphin
 ./scripts/dolphin.sh
 
-#astrovim
-./scripts/astrovim.sh
-
-#watchdog
-./scripts/watchdogblocker.sh
-
 #enable colors
 mkdir ~/wallpaper
 rsync -a --delete wallpaper/ ~/wallpaper/

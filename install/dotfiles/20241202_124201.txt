@@ -1,5 +1,6 @@
 .config
  
+copyq
 dunst
 fastfetch
 gtk-3.0
@@ -9,6 +10,7 @@ kdeglobals
 kitty
 nvim
 qt6ct
+qutebrowser
 rofi
 wal
 waybar

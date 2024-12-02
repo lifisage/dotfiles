@@ -86,7 +86,6 @@ Tools=(
    "udiskie"
    "bleachbit"
    "copyq"
-   "ark"
    "resources"
    "xournalpp"
    "scrcpy"
