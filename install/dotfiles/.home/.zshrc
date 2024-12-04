@@ -8,7 +8,9 @@ setopt correct
 setopt interactivecomments
 setopt sharehistory
 setopt appendhistory
-
+setopt autocd
+setopt autopushd
+bindkey -v
 
 #enable history
 HISTFILE=~/.zsh_history
@@ -30,6 +32,7 @@ function y() {
 #inits
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(thefuck --alias)"
 source <(fzf --zsh)
 
 
@@ -51,3 +54,4 @@ alias pacupg='sudo pacman -Syu'
 alias yaupg='yay -Syu'
 alias pacrem='sudo pacman -Rns'
 alias yarem='yay -Rns'
+
