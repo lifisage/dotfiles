@@ -21,9 +21,7 @@ Languages=(
 Terminal=(
    "kitty"
    "zsh"
-   "zsh-autosuggestions"
-   "zsh-syntax-highlighting"
-   "zsh-autocomplete-git"
+   "starship"
 )
 
 Terminal_addons=(

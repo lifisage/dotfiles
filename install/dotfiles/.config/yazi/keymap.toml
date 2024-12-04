@@ -5,6 +5,7 @@ prepend_keymap = [
   {on = "e", run = "shell ' $*' --cursor=0 --interactive"},
   {on = "<Enter>", run = "plugin --sync smart-enter"},
   {on = ["g", "t"], run = "cd ~/.local/share/Trash/files", desc = "Trash"},
+  {on = ["g", "D"], run = "cd ~/Documents/", desc = "Documents"},
   {on = "i", run = "cd --interactive"}
 ]
 [input]
