@@ -21,8 +21,9 @@ Languages=(
 Terminal=(
    "kitty"
    "zsh"
-   "oh-my-zsh-git"
-   "zsh-antidote"
+   "zsh-autosuggestions"
+   "zsh-syntax-highlighting"
+   "zsh-autocomplete-git"
 )
 
 Terminal_addons=(
@@ -33,6 +34,7 @@ Terminal_addons=(
    "zoxide"
    "fd"
    "ueberzugpp"
+   "thefuck"
 )
 
 Terminal_tools=(
@@ -74,6 +76,7 @@ Web=(
 )
 
 Tools=(
+   "wev"
    "wget"
    "loupe"
    "yt-dlp"

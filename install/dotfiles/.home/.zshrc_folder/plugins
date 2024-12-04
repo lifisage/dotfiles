@@ -1,6 +1,0 @@
-plugins=(
-    git
-    sudo
-    web-search
-    archlinux
-)

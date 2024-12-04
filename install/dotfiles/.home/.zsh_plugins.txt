@@ -1,8 +1,0 @@
-zsh-users/zsh-completions
-zsh-users/zsh-syntax-highlighting
-zdharma-continuum/fast-syntax-highlighting
-zsh-users/zsh-autosuggestions
-mafredri/zsh-async
-marlonrichert/zsh-autocomplete
-MichaelAquilina/zsh-you-should-use
-romkatv/powerlevel10k

@@ -1,35 +1,49 @@
-
+#fastfetch
 fastfetch --config examples/13
 
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
-source ~/.zshrc_folder/aliases
-source ~/.zshrc_folder/exports
-source ~/.zshrc_folder/plugins
-source ~/.zshrc_folder/yazi
-source /usr/share/zsh-antidote/antidote.zsh
-export ZSH_COMPDUMP=~/.cache/zsh/.zcompdump-$HOST
+#setopts
+setopt correct
+setopt interactivecomments
+setopt sharehistory
+setopt appendhistory
 
-#autostart
-cat ~/.cache/wal/sequences
-#zsh-history
+
+#enable history
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-setopt appendhistory
 
-#Inits
-export EDITOR=nvim
+
+#yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
-source /usr/share/oh-my-zsh/oh-my-zsh.sh
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-antidote load
+cat ~/.cache/wal/sequences
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-[[ -f /home/lifisage/.dart-cli-completion/zsh-config.zsh ]] && . /home/lifisage/.dart-cli-completion/zsh-config.zsh || true
 
-# Created by `pipx` on 2024-11-10 18:01:47
-export PATH="$PATH:/home/lifisage/.local/bin"
-
+#aliases
+alias c='clear'
+alias ls='eza -a --icons=always'
+alias ll='eza -al --icons=always'
+alias lt='eza -a --tree --level=1 --icons=always'
+alias shutdown='systemctl poweroff'
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias pacin='sudo pacman -S'
+alias yain='yay -S'
+alias pacupg='sudo pacman -Syu'
+alias yaupg='yay -Syu'
+alias pacrem='sudo pacman -Rns'
+alias yarem='yay -Rns'
