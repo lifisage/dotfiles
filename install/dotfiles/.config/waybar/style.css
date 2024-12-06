@@ -1,10 +1,9 @@
 @import "../../.cache/wal/colors-waybar.css";
 
-
 * {
   font-family: "Fira Sans Semibold", "FiraCode Nerd Font",
     "FiraCode Nerd Font Mono";
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 window#waybar {
@@ -29,10 +28,12 @@ tooltip label {
   background: @background;
 }
 
-#left, #system, #timelang, #taskbarr {
+#left,
+#system,
+#timelang,
+#taskbarr {
   background: @background;
 }
-
 
 #custom-arch {
   font-size: 25px;
@@ -47,7 +48,7 @@ tooltip label {
   font-size: 16px;
   color: @color1;
 }
-  
+
 #workspaces button {
   padding: 0px 5px;
   margin: 4px 3px;
@@ -56,7 +57,7 @@ tooltip label {
   background-color: @foreground;
   transition: all 0.3s ease-in-out;
 }
-  
+
 #workspaces button.active {
   color: @color1;
   background: @foreground;
@@ -64,19 +65,18 @@ tooltip label {
   min-width: 40px;
   transition: all 0.3s ease-in-out;
 }
-  
+
 #workspaces button:hover {
   color: @color1;
   background-color: @foreground;
   border-radius: 15px;
   opacity: 0.7;
 }
-  
-#workspaces button.empty {
-    background: @foreground;
-    opacity: 0.3;
-}
 
+#workspaces button.empty {
+  background: @foreground;
+  opacity: 0.3;
+}
 
 #window {
   background: transparent;
@@ -86,7 +86,6 @@ tooltip label {
   border-radius: 12px;
   font-size: 16px;
 }
-
 
 #taskbar {
   background: @background;
@@ -103,19 +102,20 @@ tooltip label {
   transition: all 0.3s ease-out;
 }
 
-
 #language {
-  margin: 0px 0px 0px 10px;
+  margin: 0px 5px 0px 10px;
   font-size: 16px;
 }
 
-#clock {
-  background-color: transparent;
-  font-size: 18px;
+#clock.main {
+  padding-top: 3px;
+  font-size: 14px;
+}
+
+#clock.date {
+  font-size: 12px;
   color: @foreground;
-  border-radius: 15px;
-  padding: 1px 10px 0px 10px;
-  margin: 3px 0px 3px 0px;
+  padding: 0px 10px 0px 7px;
 }
 
 #network {
@@ -125,18 +125,37 @@ tooltip label {
   padding: 2px 0px 0px 10px;
 }
 
-#audio, #batt, #blight{
-  min-width: 30px;  
+#audio,
+#batt,
+#blight,
+#usage {
+  min-width: 30px;
 }
 
-#backlight.main, #pulseaudio.main, #battery.main,#bluetooth.main {
+#usage {
+  padding-top: 2px;
+}
+
+#cpu,
+#memory {
+  background-color: transparent;
+  color: @foreground;
+}
+
+#backlight.main,
+#pulseaudio.main,
+#battery.main,
+#bluetooth.main {
   background-color: transparent;
   font-size: 16px;
   color: @foreground;
-  padding: 2px 15px 0px 15px;
+  padding: 2px 10px 0px 10px;
 }
 
-#backlight.percent, #pulseaudio.volume, #battery.percent, #bluetooth.stat{
+#backlight.percent,
+#pulseaudio.volume,
+#battery.percent,
+#bluetooth.stat {
   font-size: 12px;
   color: @foreground;
 }
@@ -155,4 +174,3 @@ tooltip label {
   padding: 10px 10px 10px 10px;
   background-color: @background;
 }
-

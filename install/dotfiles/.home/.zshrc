@@ -4,7 +4,6 @@ fastfetch --config examples/13
 
 
 #setopts
-setopt correct
 setopt interactivecomments
 setopt sharehistory
 setopt appendhistory
@@ -37,9 +36,11 @@ source <(fzf --zsh)
 
 
 #plugins
+source ~/.cache/wal/colors.sh
 source ~/.zsh/fsh/fast-syntax-highlighting.plugin.zsh
 source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/sudo/sudo.plugin.zsh
 
 #aliases
 alias c='clear'
@@ -54,4 +55,4 @@ alias pacupg='sudo pacman -Syu'
 alias yaupg='yay -Syu'
 alias pacrem='sudo pacman -Rns'
 alias yarem='yay -Rns'
-
+alias pacunlock='rm /var/lib/pacman/db.lck'

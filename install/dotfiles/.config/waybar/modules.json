@@ -13,7 +13,7 @@
     "format": "{icon}",
     "format-icons": {
       "empty": "",
-      "active": "",
+      "active": "",
       "default": ""
     },
     "persistent-workspaces": {
@@ -34,23 +34,58 @@
     "spacing": 10
   },
 
-  "clock": {
-    "format": "{:%I:%M %p}",
-    "tooltip": false
+  "clock#main": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-scroll-up": "tz_up",
+      "on-scroll-down": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+
+  "clock#date": {
+    "format": "{:%b. %d}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-scroll-up": "tz_up",
+      "on-scroll-down": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
   },
 
   "cpu": {
-    "format": "  {usage}%  |"
+    "format": "  {usage}%"
   },
 
   "memory": {
-    "format": "   {}%  |"
-  },
-
-  "disk": {
-    "interval": 30,
-    "format": "   {percentage_used}% ",
-    "path": "/"
+    "format": "  {percentage}%"
   },
 
   "hyprland/language": {
@@ -187,8 +222,18 @@
     ]
   },
 
+  "group/usage": {
+    "orientation": "vertical",
+    "modules": ["cpu", "memory"]
+  },
+
+  "group/custom_clock": {
+    "orientation": "vertical",
+    "modules": ["clock#main", "clock#date"]
+  },
+
   "group/timelang": {
     "orientation": "horizontal",
-    "modules": ["hyprland/language", "clock"]
+    "modules": ["hyprland/language", "group/custom_clock"]
   }
 }
