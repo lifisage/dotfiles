@@ -9,7 +9,6 @@ setopt sharehistory
 setopt appendhistory
 setopt autocd
 setopt autopushd
-bindkey -v
 
 #enable history
 HISTFILE=~/.zsh_history

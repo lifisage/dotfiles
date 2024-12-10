@@ -140,6 +140,7 @@
 
   "pulseaudio#main": {
     "format": "{icon}",
+    "format-muted": " ",
     "scroll-step": 5,
     "format-icons": {
       "headphone": " ",
