@@ -34,7 +34,7 @@ Qt_Wayland=(
     "qt5ct"
     "qt6-wayland"
     "qt6-base"
-    "qt6ct"
+    "qt6ct-kde"
 )
 
 # Color-related packages
@@ -42,6 +42,8 @@ Theme=(
     "nwg-look"
     "python-pywal"
     "breeze"
+    "breeze5"
+    "breeze-icons"
     "bibata-cursor-theme"
     "papirus-icon-theme"
 )

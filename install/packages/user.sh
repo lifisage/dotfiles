@@ -90,6 +90,8 @@ Tools=(
     "resources"
     "xournalpp"
     "scrcpy"
+    "man-db"
+    "man-pages"
 )
 
 Development=(
