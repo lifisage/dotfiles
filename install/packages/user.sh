@@ -92,6 +92,7 @@ Tools=(
     "scrcpy"
     "man-db"
     "man-pages"
+    "expac"
 )
 
 Development=(
