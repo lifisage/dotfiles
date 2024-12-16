@@ -3,6 +3,7 @@ TerminalApplication=kitty
 
 [KDE]
 ShowDeleteCommand=false
+widgetStyle=qt6ct-style
 
 [KShortcutsDialog Settings]
 Dialog Size=600,480

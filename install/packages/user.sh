@@ -41,6 +41,13 @@ Terminal_tools=(
     "yazi"
     "neovim"
     "handlr-regex"
+    "hwinfo"
+    "wev"
+    "wget"
+    "yt-dlp"
+    "man-db"
+    "man-pages"
+    "expac"
 )
 
 File_tools=(
@@ -74,10 +81,7 @@ Web=(
 )
 
 Tools=(
-    "wev"
-    "wget"
     "loupe"
-    "yt-dlp"
     "gucharmap"
     "localsend-bin"
     "rustdesk-bin"
@@ -90,9 +94,6 @@ Tools=(
     "resources"
     "xournalpp"
     "scrcpy"
-    "man-db"
-    "man-pages"
-    "expac"
 )
 
 Development=(
