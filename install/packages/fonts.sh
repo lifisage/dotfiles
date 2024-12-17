@@ -15,6 +15,7 @@ Fonts=(
     "ttf-fira-sans"
     "ttf-fira-code"
     "ttf-firacode-nerd"
+    "ttf-ms-win11-auto"
 )
 
-sudo pacman -S --needed --noconfirm "${Fonts[@]}"
+yay -S --needed --noconfirm "${Fonts[@]}"

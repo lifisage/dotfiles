@@ -51,4 +51,4 @@ Install=(
     "${System[@]}"
 )
 
-sudo pacman -S --needed --noconfirm "${Install[@]}"
+yay -S --needed --noconfirm "${Install[@]}"
