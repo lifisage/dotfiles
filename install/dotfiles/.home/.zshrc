@@ -39,6 +39,7 @@ source ~/.cache/wal/colors.sh
 source ~/.zsh/fsh/fast-syntax-highlighting.plugin.zsh
 source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source ~/.zsh/sudo/sudo.plugin.zsh
 
 #aliases
@@ -54,5 +55,5 @@ alias pacupg='sudo pacman -Syu'
 alias yaupg='yay -Syu'
 alias pacrem='sudo pacman -Rns'
 alias yarem='yay -Rns'
-alias pacunlock='rm /var/lib/pacman/db.lck'
+alias pacunlock='rm -i /var/lib/pacman/db.lck'
 alias yalist='expac --timefmt="%Y-%m-%d %H:%M:%S" "%b\t%n" | grep -F "$(pacman -Qqe)" | sort'

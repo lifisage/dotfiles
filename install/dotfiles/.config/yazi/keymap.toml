@@ -6,6 +6,7 @@ prepend_keymap = [
   {on = "<C-o>", run = "shell '~/.config/yazi/default_app_chooser.sh $*' --confirm"},
   {on = "e", run = "shell ' $*' --cursor=0 --interactive"},
   {on = "<Enter>", run = "plugin --sync smart-enter"},
+  {on = "R", run = "rename --empty=stem --cursor=start"},
   {on = ["g", "t"], run = "cd ~/.local/share/Trash/files", desc = "Trash"},
   {on = ["g", "D"], run = "cd ~/Documents", desc = "Documents"},
   {on = ["g", "m"], run = "cd /run/media/lifisage", desc = "Mounts"},
