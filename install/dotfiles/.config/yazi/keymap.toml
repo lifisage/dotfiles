@@ -1,11 +1,12 @@
 [manager]
 prepend_keymap = [
   {on = "\\", run  = "quit"},
-  {on = "i", run = "cd --interactive"},
-  {on = "!", run = "shell '~/.config/yazi/kitty.sh $0' --confirm"},
-  {on = "<C-o>", run = "shell '~/.config/yazi/default_app_chooser.sh $*' --confirm"},
+  {on = "i", run = "cd  --interactive"},
+  {on = "!", run = "shell '~/.config/yazi/kitty.sh $0'"},
+  {on = "<C-o>", run = "shell '~/.config/yazi/default_app_chooser.sh $*'"},
   {on = "e", run = "shell ' $*' --cursor=0 --interactive"},
-  {on = "<Enter>", run = "plugin --sync smart-enter"},
+  {on = "<Enter>", run = "plugin smart-enter"},
+  {on = "l", run = "plugin smart-enter"},
   {on = "R", run = "rename --empty=stem --cursor=start"},
   {on = ["g", "t"], run = "cd ~/.local/share/Trash/files", desc = "Trash"},
   {on = ["g", "D"], run = "cd ~/Documents", desc = "Documents"},
