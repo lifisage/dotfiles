@@ -5,7 +5,7 @@ require("yatline"):setup({
 
 	tab_width = 20,
 	tab_use_inverse = false,
-	show_background = true,
+	show_background = false,
 
 	display_header_line = true,
 	display_status_line = true,
@@ -13,18 +13,16 @@ require("yatline"):setup({
 	header_line = {
 		left = {
 			section_a = {
-				{ type = "line", custom = false, name = "tabs", params = { "left" } },
+				{ type = "string", custom = false, name = "tab_path" },
 			},
 			section_b = {},
 			section_c = {},
 		},
 		right = {
 			section_a = {
-				{ type = "string", custom = false, name = "date", params = { "%A, %d %B %Y" } },
+				{ type = "line", custom = false, name = "tabs", params = { "right" } },
 			},
-			section_b = {
-				{ type = "string", custom = false, name = "date", params = { "%X" } },
-			},
+			section_b = {},
 			section_c = {},
 		},
 	},
