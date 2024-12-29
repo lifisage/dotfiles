@@ -42,6 +42,7 @@ System=(
     "alsa-utils"
     "pacman-contrib"
     "perl-file-mimeinfo"
+    "libva-intel-driver"
 )
 
 Install=(

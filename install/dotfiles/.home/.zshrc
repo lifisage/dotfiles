@@ -56,4 +56,8 @@ alias yaupg='yay -Syu'
 alias pacrem='sudo pacman -Rns'
 alias yarem='yay -Rns'
 alias pacunlock='rm -i /var/lib/pacman/db.lck'
-alias yalist='expac --timefmt="%Y-%m-%d %H:%M:%S" "%b\t%n" | grep -F "$(pacman -Qqe)" | sort'
+alias yalist='expac --timefmt="%Y-%m-%d %T" "%l\t%n" $(pacman -Qqe) | sort | less +G'
+alias yafulllist='expac --timefmt="%Y-%m-%d %T" "%l\t%n" $(pacman -Qq) | sort | less +G'
+pkgupdates() {
+  grep -E "upgraded" /var/log/pacman.log | grep "$1"
+}
