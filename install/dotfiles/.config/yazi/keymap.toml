@@ -2,7 +2,7 @@
 prepend_keymap = [
   {on = "\\", run  = "quit"},
   {on = "i", run = "cd  --interactive"},
-  {on = "!", run = "shell '~/.config/yazi/kitty.sh $0'"},
+  {on = "|", run = "shell '~/.config/yazi/kitty.sh $0'"},
   {on = "<C-o>", run = "shell '~/.config/yazi/default_app_chooser.sh $*'"},
   {on = "e", run = "shell ' $*' --cursor=0 --interactive"},
   {on = "<Enter>", run = "plugin smart-enter"},

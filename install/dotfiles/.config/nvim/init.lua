@@ -1,7 +1,6 @@
+require 'config.options'
 if vim.g.vscode then
-  require 'config.options'
 else
-  require 'config.options'
   require 'config.mappings'
   require 'config.lazy'
 
