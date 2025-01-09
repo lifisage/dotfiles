@@ -32,6 +32,7 @@ Bluetooth_and_Network=(
 )
 
 System=(
+    "earlyoom"
     "os-prober"
     "nm-connection-editor"
     "brightnessctl"

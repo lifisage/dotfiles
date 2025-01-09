@@ -81,7 +81,7 @@ Screenshots=(
 Install=(
     "${Hyprland[@]}"
     "${Hyprland_Deps[@]}"
-    "${Qt_Wayland[@]}" $()
+    "${Qt_Wayland[@]}"
     "${Theme[@]}"
     "${Desktop[@]}"
     "${Bars[@]}"
